@@ -1,114 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Hello World!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel= "stylesheet" type="text/css" href="style.css">
-</head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
-<div class="container">
-    <div class="left">
+  <body>
+    <div class="container">
+      <div class="left">
         <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">
-                    <img src="assets/Home.svg" alt="" class="gray-filtered">
-                    <span>Home</span>
-                    </a>
-                </li>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="assets/Home.svg" alt="" class="gray-filtered" />
+                <span>Home</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/Search.svg" alt="" class="gray-filtered">
-                    <span>Search</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img src="assets/Search.svg" alt="" class="gray-filtered" />
+                <span>Search</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/YourLibrary.svg" alt="" class="gray-filtered">
-                    <span>Your Library</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/YourLibrary.svg"
+                  alt=""
+                  class="gray-filtered"
+                />
+                <span>Your Library</span>
+              </a>
+            </li>
 
-                <div style="height: 20px;"></div>
+            <div style="height: 20px"></div>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
-                    <span>Create Playlists</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/CreatePlaylist.svg"
+                  alt=""
+                  class="gray-filtered"
+                />
+                <span>Create Playlists</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/Like.svg" alt="" class="gray-filtered">
-                    <span>Liked Songs</span>
-                    </a>
-                </li>
-
-            </ul>
+            <li>
+              <a href="#">
+                <img src="assets/Like.svg" alt="" class="gray-filtered" />
+                <span>Liked Songs</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <hr width="100%">
-        <div style="height: 20px;"></div>
+        <hr width="100%" />
+        <div style="height: 20px"></div>
         <div class="menu playlists">
-            <ul>
-                <li>
-                    <a href="#">
-                    <span>Chill vibes</span>
-                    </a>
-                </li>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Chill vibes</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Summer Hits</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Summer Hits</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Workout Motivation</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#">
-                    <span>Party Time</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Workout Motivation</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Road Trip</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Party Time</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Classical Masterpiece</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Road Trip</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Relaxing</span>
-                    </a>
-                </li> 
-            </ul>
+            <li>
+              <a href="#">
+                <span>Classical Masterpiece</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span>Relaxing</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="current-song-cover">
-            <img src="images/song-cover.jpeg" alt="">
-            # TODO: Get images for images folder then delete this line
-            <img src="assets/Shuffle.svg" alt="">
+          <img src="images/song-cover.jpeg" alt="" />
+          # TODO: Get images for images folder then delete this line
+          <img src="assets/Shuffle.svg" alt="" />
         </div>
+      </div>
 
+      <div class="right">
+        <div class="playlist-header">
+          <div class="playlist-top">
+            <div class="playlist-arrows">
+              <div class="arrow-container">
+                <img src="assets/LeftArrow.svg" alt="" />
+              </div>
+              <div class="arrow-container">
+                <img src="assets/RightArrow.svg" alt="" />
+              </div>
+            </div>
+            <div class="playlist-top-email">
+              <div class="arrow-container">
+                <img src="assets/Profile.svg" alt="" />
+              </div>
+              <span>servet.gulnaro...</span>
+            </div>
+          </div>
+          <div class="playlist-content">
+            <div class="playlist-cover">
+              <img src="images/playlist-cover.png" alt="" />
+            </div>
+            <div class="playlist-info">
+              <div class="playlist-public">PUBLIC PLAYLIST</div>
+              <div class="playlist-title">Classic Road Trip Songs</div>
+              <div class="playlist-description">
+                A soundtrack to fuel your good mood while on the road.
+              </div>
+              <div style="height: 10px"></div>
+              <div class="playlist-stats">
+                <img
+                  src="assets/spotify-logo.png"
+                  width="24px"
+                  height="24px"
+                  alt=""
+                />
+                <span> Spotify ·</span>
+                <span>1,234,567 likes · </span>
+                <span>100 songs, </span>
+                <span>4 hr 10 min </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="right"></div>
-</div>
-
-</body>
+  </body>
 </html>
