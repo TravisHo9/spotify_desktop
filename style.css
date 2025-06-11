@@ -1,3 +1,8 @@
+:root {
+  --spotify-color: #1FD75F;
+  --footer-height: 40px;
+}
+
 html,
 body {
   -webkit-app-region: drag;
@@ -10,7 +15,7 @@ body {
   margin: 0px;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue";
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvatica Neue", "Helvetica";
   max-height: 100vh;
   height: 100vh;
 }
@@ -123,6 +128,7 @@ body {
 
 .right {
   width: 100%;
+  background-color: #434343;
 }
 
 .playlist-top-email {
@@ -206,4 +212,107 @@ body {
 .playlist-stats span:first-of-type {
   font-weight: 1000;
   font-family: "AvenirLTStd-Black";
+}
+
+.playlist-buttons-left, .playlist-buttons-right{
+  display :flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-songs-container{
+  height: 100vh;
+  background: rgb(95, 95, 96);
+  background: linear-gradient(
+    180deg,
+    rgba(95, 95, 96, 1) 0%,
+    rgba(10, 10, 10, 1) 25%
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.playlist-buttons-resume-pause{
+  background-color: var(--spotify-color);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-buttons-like, .playlist-buttons-download, .playlist-buttons-three-dot{
+  margin-left: 20px;
+}
+
+.playlist-buttons-order{
+  color: #A9A9A9;
+  position: relative;
+  top: -2px;
+  margin-left: 20px;
+}
+
+.playlist-songs{
+  margin-top: 20px;
+}
+
+.playlist-songs table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.playlist table tr td , .playlist-songs tr th{
+  padding: 10px;
+  color: #CACACA;
+}
+
+.playlist-songs table tr th{
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.playlist-songs table tr:first-of-type{
+  border-bottom: 1px solid #CACACA;
+}
+
+.playlist-songs table th{
+  text-align: left
+}
+
+.song-image img{
+  width: 36px;
+  height: 36px;
+}
+
+.song-name, .footer-player-left-song-name{
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+.song-name-arlbum{
+  padding-left: 15px;
+  letter-spacing: 0.5px;
+}
+
+.song-artist, .song-album, .song-date-added, tr td:first-of-type, .song-duration{
+  font-size: 12px;
+  margin-top: 6px;
+  color: #848485;
+}
+
+.song-artist{
+  margin-top: 3px;
+}
+
+.song-title{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
