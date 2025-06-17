@@ -1,114 +1,343 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Hello World!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel= "stylesheet" type="text/css" href="style.css">
-</head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
-<div class="container">
-    <div class="left">
+  <body>
+    <div class="container">
+      <div class="left">
         <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">
-                    <img src="assets/Home.svg" alt="" class="gray-filtered">
-                    <span>Home</span>
-                    </a>
-                </li>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="assets/Home.svg" alt="" class="gray-filtered" />
+                <span>Home</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/Search.svg" alt="" class="gray-filtered">
-                    <span>Search</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img src="assets/Search.svg" alt="" class="gray-filtered" />
+                <span>Search</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/YourLibrary.svg" alt="" class="gray-filtered">
-                    <span>Your Library</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/YourLibrary.svg"
+                  alt=""
+                  class="gray-filtered"
+                />
+                <span>Your Library</span>
+              </a>
+            </li>
 
-                <div style="height: 20px;"></div>
+            <div style="height: 20px"></div>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
-                    <span>Create Playlists</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/CreatePlaylist.svg"
+                  alt=""
+                  class="gray-filtered"
+                />
+                <span>Create Playlists</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <img src="assets/Like.svg" alt="" class="gray-filtered">
-                    <span>Liked Songs</span>
-                    </a>
-                </li>
-
-            </ul>
+            <li>
+              <a href="#">
+                <img src="assets/Like.svg" alt="" class="gray-filtered" />
+                <span>Liked Songs</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <hr width="100%">
-        <div style="height: 20px;"></div>
+        <hr width="100%" />
+        <div style="height: 20px"></div>
         <div class="menu playlists">
-            <ul>
-                <li>
-                    <a href="#">
-                    <span>Chill vibes</span>
-                    </a>
-                </li>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Chill vibes</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Summer Hits</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Summer Hits</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Workout Motivation</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#">
-                    <span>Party Time</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Workout Motivation</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Road Trip</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Party Time</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Classical Masterpiece</span>
-                    </a>
-                </li>
+            <li>
+              <a href="#">
+                <span>Road Trip</span>
+              </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                    <span>Relaxing</span>
-                    </a>
-                </li> 
-            </ul>
+            <li>
+              <a href="#">
+                <span>Classical Masterpiece</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span>Relaxing</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="current-song-cover">
-            <img src="images/song-cover.jpeg" alt="">
-            # TODO: Get images for images folder then delete this line
-            <img src="assets/Shuffle.svg" alt="">
+          <img src="images/song-cover.jpg" alt="" />
+          # TODO: Get images for images folder then delete this line
+          <img src="assets/Shuffle.svg" alt="" />
         </div>
+      </div>
 
+      <div class="right">
+        <div class="playlist-header">
+          <div class="playlist-top">
+            <div class="playlist-arrows">
+              <div class="arrow-container">
+                <img src="assets/LeftArrow.svg" alt="" />
+              </div>
+              <div class="arrow-container">
+                <img src="assets/RightArrow.svg" alt="" />
+              </div>
+            </div>
+            <div class="playlist-top-email">
+              <div class="arrow-container">
+                <img src="assets/Profile.svg" alt="" />
+              </div>
+              <span>Work in progress... </span>
+            </div>
+          </div>
+          <div class="playlist-content">
+            <div class="playlist-cover">
+              <img src="images/playlist-cover.jpg"  alt="" />
+            </div>
+            <div class="playlist-info">
+              <div class="playlist-public">PUBLIC PLAYLIST</div>
+              <div class="playlist-title">Classic Road Trip Songs</div>
+              <div class="playlist-description">
+                A soundtrack to fuel your good mood while on the road.
+              </div>
+              <div style="height: 10px"></div>
+              <div class="playlist-stats">
+                <img
+                  src="assets/spotify-logo.png"
+                  width="24px"
+                  height="24px"
+                  alt=""
+                />
+                <span> Spotify ·</span>
+                <span>1,234,567 likes · </span>
+                <span>100 songs, </span>
+                <span>4 hr 10 min </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playlist-song-container">
+          <div class="playlist-buttons">
+            <div class="playlist-buttons-left">
+              <div class="playlist-buttons-resume-pause">
+                <img src="assets/Pause.svg" alt="" />
+              </div>
+              <div class="playlist-buttons-like">
+                <img src="assets/FiiledLike.svg" alt="" class="spotify-color"/>
+              </div>
+              <div class="playlist-buttons-download">
+                <img src="assets/Download.svg" alt="" />
+              </div>
+              <div class="playlist-buttons-three-dot">
+                <img src="assets/ThreeDots.svg" alt="" />
+              </div>
+            </div>
+            <div class="playlist-buttons-right">
+              <div class="playlist-buttons-search">
+                <img src="assets/Search.svg" alt=""/>
+              </div>
+              <div class="playlist-buttons-order">
+                Custom Order
+              </div>
+            </div>
+            </div>
+            <div class="playlist-songs">
+              <table>
+                <tr>
+                  <th>#</th>
+                  <th>TITLE</th>
+                  <th>ALBUM</th>
+                  <th>DATE ADDED</th>
+                  <th><img src="assets/Duration.svg" alt=""></th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td class="song-title">
+                    <div class="song-image">
+                      <img src="images/song-cover.jpg" alt="" />
+                    </div>
+                    <div class="song-name-artist">
+                      <div class="song-name">
+                        Against the Tide 
+                      </div>
+                      <div class="song-artist">
+                        Obadiah Brown Beach
+                      </div>
+                  </td>
+                  <td class="song-album">Against the Tide</td>
+                  <td class="song-date-added">May 27, 2025</td>
+                  <td class="song-duration">5:10</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td class="song-title">
+                    <div class="song-image">
+                      <img src="images/song-cover.jpg" alt="" />
+                    </div>
+                    <div class="song-name-artist">
+                      <div class="song-name">
+                        Against the Tide 
+                      </div>
+                      <div class="song-artist">
+                        Obadiah Brown Beach
+                      </div>
+                  </td>
+                  <td class="song-album">Against the Tide</td>
+                  <td class="song-date-added">May 27, 2025</td>
+                  <td class="song-duration">5:10</td>
+                </tr>
+                
+                <tr>
+                  <td>3</td>
+                  <td class="song-title">
+                    <div class="song-image">
+                      <img src="images/song-cover.jpg" alt="" />
+                    </div>
+                    <div class="song-name-artist">
+                      <div class="song-name">
+                        Against the Tide 
+                      </div>
+                      <div class="song-artist">
+                        Obadiah Brown Beach
+                      </div>
+                  </td>
+                  <td class="song-album">Against the Tide</td>
+                  <td class="song-date-added">May 27, 2025</td>
+                  <td class="song-duration">5:10</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td class="song-title">
+                    <div class="song-image">
+                      <img src="images/song-cover.jpg" alt="" />
+                    </div>
+                    <div class="song-name-artist">
+                      <div class="song-name">
+                        Against the Tide 
+                      </div>
+                      <div class="song-artist">
+                        Obadiah Brown Beach
+                      </div>
+                  </td>
+                  <td class="song-album">Against the Tide</td>
+                  <td class="song-date-added">May 27, 2025</td>
+                  <td class="song-duration">5:10</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td class="song-title">
+                    <div class="song-image">
+                      <img src="images/song-cover.jpg" alt="" />
+                    </div>
+                    <div class="song-name-artist">
+                      <div class="song-name">
+                        Against the Tide 
+                      </div>
+                      <div class="song-artist">
+                        Obadiah Brown Beach
+                      </div>
+                  </td>
+                  <td class="song-album">Against the Tide</td>
+                  <td class="song-date-added">May 27, 2025</td>
+                  <td class="song-duration">5:10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-player">
+        <div class="footer-player-left">
+          <div class="footer-player-left-song">
+            <div class="footer-player-left-song-name">Against the Tide</div>
+            <div class="footer-player-left-song-artist">Obadiah Brown Beach</div>
+          </div>
+
+          <div class="footer-player-left-like">
+            <img src="assets/FiiledLike.svg" alt=""/>
+          </div>
+        </div>
+        <div class="footer-player-middle">
+          <div class="footer-player-middle-buttons">
+            <img src="assets/Shuffle.svg" alt="" class="gray-filtered"/>
+            <img src="assets/Previous.svg" alt="" class="gray-filtered"/>
+              <div class="pause-button">
+                <img src="assets/Pause.svg" alt=""/>
+              </div>
+              <img src="assets/Next.svg" alt="" class="gray-filtered"/>
+              <img src="assets/Repeat.svg" alt="" class="gray-filtered"/>
+          </div>
+        </div>
+        <div class="footer-player-middle-slider">
+          <div class="player-time">1:15</div>
+          <div class="player-slider">
+            <input type="range" min="1" max="100" value="30"/>
+          </div>
+          <div class="player-time">4:10</div>
+        </div>
+        <div class="footer-player-right">
+          <div class="footer-player-right-buttons">
+            <img src="assets/Queue.svg" alt="">
+            <img src="assets/Connect to a device.svg" alt="">
+            <img src="assets/Volume.svg" alt="">
+            <div class="player-slider">
+              <input type="range" min="1" max="100" value="30" width=""/>
+            </div>
+            <img src="assets/Full screen.svg" alt="">
+            <div class="player-slider">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="right"></div>
-</div>
-
-</body>
+  </body>
 </html>
